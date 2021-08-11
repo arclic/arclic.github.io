@@ -273,7 +273,8 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      show_date: true
+      read_time: false
       comments: true
       share: true
       related: true
@@ -285,6 +286,7 @@ defaults:
     values:
       layout: single
       author_profile: true
+      show_date: true
       read_time: false
       comments: false
       share: true
