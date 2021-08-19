@@ -13,7 +13,8 @@ body {
   padding: 0;
   color: $text-color;
   font-family: $global-font-family;
-  line-height: 1.5;
+  line-height: 1.75;
+  text-align: justify;
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
@@ -31,6 +32,14 @@ h6 {
   line-height: 1.2;
   font-family: $header-font-family;
   font-weight: bold;
+}
+.page__content h2,
+.page__content h3,
+.page__content h4,
+.page__content h5,
+.page__content h6 {
+  margin-bottom: 0.5em;
+  color: #2779cc;
 }
 
 h1 {
