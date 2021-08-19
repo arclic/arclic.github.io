@@ -74,6 +74,21 @@ Language Server를 통해 language feature를 제공하는 것이 복잡해 보�
 <img src="/assets/images/lsp-languages-editors.png">
 <figcaption>Language Server Protocol(LSP)</figcaption></center>
 
+### Implementing Language Server
+
+VSCode 에서 Language Server(일반적인 의미에서의 language server)는 **Language Client**와 **Language Server**로 구성되어 있다.
+
+- Language Client: 일반 VSCode extension으로 Javascript 또는 Typescript를 활용해 만들어짐
+- Language Server: 별도의 process에서 동작하는 language analysis tool
+
+둘 사이의 통신은 아래와 같이 Language Server Protocol을 활용한다. 특히 별도의 process를 활용하기 때문에 PHP Language Server는 PHP로 만들어져 있어도 LSP를 활용해 통신 가능하다.
+
+<center>
+<img src="/assets/images/lsp-illustration.png">
+<figcaption>VSCode 내부의 Language Server</figcaption></center>
+
+Node를 활용해 직접 새로운 Language Server을 구현하는 것은 [VSCode language-server-extension-guide](https://code.visualstudio.com/api/language-extensions/language-server-extension-guide#implementing-a-language-server)에 잘 설명되어 있다.
+
 ## 참고 자료
 
 - [Visual Studio Code Extension API Guide](https://code.visualstudio.com/api)
