@@ -1,6 +1,6 @@
 ---
 title: "[TIL]데이터베이스 시스템 - CH.01"
-excerpt: "Database System chapter 01"
+excerpt: "Database System chapter 01 - 서론"
 
 categories:
   - TIL
